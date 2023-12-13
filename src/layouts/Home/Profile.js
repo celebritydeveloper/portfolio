@@ -28,7 +28,7 @@ const ProfileText = ({ visible, titleId }) => (
       use and built check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to play basketball, hangout with my son, listen to music, and{' '}
+      In my spare time I like to play basketball, hangout with my son, listening to music, and{' '}
       take long drives. I&apos;m always down for hearing
       about new projects, so feel free to drop me a line.
     </Text>
