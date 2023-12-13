@@ -21,7 +21,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I&apos;m Essien, currently I live in Uyo freelancing as a software engineer at{' '}
+      I&apos;m Essien, currently I live in Uyo freelancing as a software engineer for{' '}
       <Link href="https://www.setly.ai">Setly AI</Link>. My projects include Frontend design, Backend
       development, and packages development. Being comfortable with solving problems allows me to rapidly
       put systems and structures together and validate experiences. If you&apos;re interested in the tools and software I
