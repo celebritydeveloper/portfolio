@@ -35,22 +35,22 @@ export const Uses = () => {
           title="Uses"
           description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
         />
-        <ProjectSection padding="none" className={styles.section}>
+        {/* <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
               <ProjectSectionHeading>Design</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
+                    <Link href="https://www.figma.com">VS Code</Link> is my primary tool for
+                    coding these days. Made the switch from Sketch in 2020 and haven&apos;t
+                    looked back. I&apos;ve also created{' '}
                     <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
                     you can install.
                   </ListItem>
                   <ListItem>
                     Any motion graphics I create are created in Adobe After Effects. So
-                    far I haven’t found a non-Adobe product that’s as good. If anyone has
+                    far I haven&apos;t found a non-Adobe product that’s as good. If anyone has
                     suggestions please <Link href="/contact">message me</Link>.
                   </ListItem>
                   <ListItem>
@@ -63,7 +63,7 @@ export const Uses = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
@@ -77,7 +77,7 @@ export const Uses = () => {
                     my typeface of choice.
                   </ListItem>
                   <ListItem>
-                    Firefox is my main browser for both development and general use.
+                    Brave is my main browser for both development and general use.
                   </ListItem>
                   <ListItem>
                     <Link href="https://reactjs.org/">React</Link> is my front end
@@ -121,15 +121,15 @@ export const Uses = () => {
                 <TableBody>
                   <TableRow>
                     <TableHeadCell>CPU</TableHeadCell>
-                    <TableCell>AMD Ryzen 5800x</TableCell>
+                    <TableCell>Quad-Core Intel Core i5</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>GPU</TableHeadCell>
-                    <TableCell>MSI Gaming X Trio RTX 3080</TableCell>
+                    <TableCell>Intel Iris Plus Graphics 645</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Memory</TableHeadCell>
-                    <TableCell>GSkill 32GB DDR4 3600mhz CAS 18</TableCell>
+                    <TableCell>8 GB 2133 MHz LPDDR3</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Motherboard</TableHeadCell>
@@ -139,26 +139,26 @@ export const Uses = () => {
                     <TableHeadCell>Monitor</TableHeadCell>
                     <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
                   </TableRow>
-                  <TableRow>
+                  {/* <TableRow>
                     <TableHeadCell>Keyboard</TableHeadCell>
                     <TableCell>Logitech MX Keys</TableCell>
-                  </TableRow>
-                  <TableRow>
+                  </TableRow> */}
+                  {/* <TableRow>
                     <TableHeadCell>Mouse</TableHeadCell>
                     <TableCell>Logitech G403</TableCell>
-                  </TableRow>
+                  </TableRow> */}
                   <TableRow>
                     <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″ (2022 M1 Max)</TableCell>
+                    <TableCell>Macbook Pro 13″ (2020)</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Headphones</TableHeadCell>
                     <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
                   </TableRow>
-                  <TableRow>
+                  {/* <TableRow>
                     <TableHeadCell>Microphone</TableHeadCell>
                     <TableCell>Blue Yeti</TableCell>
-                  </TableRow>
+                  </TableRow> */}
                 </TableBody>
               </Table>
             </ProjectTextRow>
