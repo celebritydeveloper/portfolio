@@ -1,15 +1,15 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import gamestackTexture2Large from 'assets/ronin-3.webp';
+import gamestackTexture2Placeholder from 'assets/ronin-3.webp';
+import gamestackTexture2 from 'assets/ronin-3.webp';
+import gamestackTextureLarge from 'assets/ronin.webp';
+import gamestackTexturePlaceholder from 'assets/ronin.webp';
+import gamestackTexture from 'assets/ronin.webp';
+import sliceTextureLarge from 'assets/review.png';
+import sliceTexturePlaceholder from 'assets/review.png';
+import sliceTexture from 'assets/review.png';
+import sprTextureLarge from 'assets/remail.png';
+import sprTexturePlaceholder from 'assets/remail.png';
+import sprTexture from 'assets/remail.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Engineer', 'Designer', 'Architect', 'Illustrator'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -69,7 +69,7 @@ export const Home = () => {
     <div className={styles.home}>
       <Meta
         title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
+        description="Design portfolio of Saviour Essien — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
       <Intro
@@ -83,10 +83,10 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Tapping into the power of AI"
+        description="Built a Gmail chrome extension to help user curate AI generated content for emails"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://remail.ai/"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -104,10 +104,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Web3 Wallet"
+        description="Development for crypto tracking wallet built in React Native"
+        buttonText="Visit store"
+        buttonLink="https://play.google.com/store/apps/details?id=com.skymavis.genesis"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -128,10 +128,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Plant a tree with reviews"
+        description="Help users make sense of reviews while also helping nature by plating trees through proceeds"
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="https://reviewforest.org"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',

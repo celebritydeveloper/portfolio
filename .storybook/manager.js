@@ -4,8 +4,8 @@ import { addons } from '@storybook/addons';
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://hamishw.com/icon.svg',
-    brandTitle: 'Hamish Williams Components',
-    brandUrl: 'https://hamishw.com',
+    brandImage: 'https://celebritydev.com/icon.svg',
+    brandTitle: 'Saviour Essien Components',
+    brandUrl: 'https://celebritydev.com',
   },
 });
