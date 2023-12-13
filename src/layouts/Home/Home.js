@@ -4,6 +4,9 @@ import gamestackTexture2 from 'assets/ronin-3.webp';
 import gamestackTextureLarge from 'assets/ronin.webp';
 import gamestackTexturePlaceholder from 'assets/ronin.webp';
 import gamestackTexture from 'assets/ronin.webp';
+import gamestackTextureLarge1 from 'assets/npm.png';
+import gamestackTexturePlaceholder1 from 'assets/npm.png';
+import gamestackTexture1 from 'assets/npm.png';
 import sliceTextureLarge from 'assets/review.png';
 import sliceTexturePlaceholder from 'assets/review.png';
 import sliceTexture from 'assets/review.png';
@@ -27,10 +30,11 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -89,7 +93,7 @@ export const Home = () => {
         buttonLink="https://remail.ai/"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Gmail chrome extension',
           textures: [
             {
               srcSet: [sprTexture, sprTextureLarge],
@@ -110,7 +114,7 @@ export const Home = () => {
         buttonLink="https://play.google.com/store/apps/details?id=com.skymavis.genesis"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'Web3 crypto wallet',
           textures: [
             {
               srcSet: [gamestackTexture, gamestackTextureLarge],
@@ -123,6 +127,7 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
@@ -134,7 +139,7 @@ export const Home = () => {
         buttonLink="https://reviewforest.org"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Gather reviews in one place',
           textures: [
             {
               srcSet: [sliceTexture, sliceTextureLarge],
@@ -143,6 +148,30 @@ export const Home = () => {
           ],
         }}
       />
+
+
+      <ProjectSummary
+        id="project-4"
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Custom image rating"
+        description="Help frontend developers quickly implement custom rating component in their projects"
+        buttonText="View project"
+        buttonLink="https://www.npmjs.com/package/image-rating-react"
+        model={{
+          type: 'laptop',
+          alt: 'Custom Image Rating react package',
+          textures: [
+            {
+              srcSet: [gamestackTexture1, gamestackTextureLarge1],
+              placeholder: gamestackTexturePlaceholder1,
+            },
+          ],
+        }}
+      />
+
+
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
